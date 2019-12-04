@@ -582,3 +582,25 @@ label {
 .social-media .fab:hover {
   color: white;
 }
+
+.tooltip {
+  position: relative;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  size: 9px;
+  color: white;
+  background-color: #424240;
+  text-align: center;
+  border-radius: 5px;
+  padding: 3px 5px;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
