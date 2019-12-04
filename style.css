@@ -310,23 +310,25 @@ button[value="read more"]:hover {
 }
 
 .s3a-container {
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .s3a__title__box {
   display: grid;
-
 }
 
 .s3a__content__box {
+  height: 92%;
+  /*figure out what's going on in here*/
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat (2, 1fr);
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   grid-column-gap: 1em;
-  grid-row-gap: 3em;
-  margin-bottom: 100px;
+  grid-row-gap: 2.5em;
 }
 
 .s3a__content {
@@ -358,8 +360,84 @@ button[value="read more"]:hover {
 }
 
 .s3b-container {
+  height: 80%;
   margin-bottom: 100px;
 }
+
+.s3b__title__box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+}
+
+.tab_container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 70px;
+  position: relative;
+}
+
+input,
+#content1,
+#content2 {
+  clear: both;
+  padding-top: 10px;
+  display: none;
+}
+
+label {
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+  float: left;
+  width: 100px;
+  padding: 1em;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2 {
+  display: block;
+  padding: 20px;
+  background: #fff;
+  color: black;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.tab_container .tab-content p,
+.tab_container .tab-content h3 {
+  -webkit-animation: fadeInScale 0.7s ease-in-out;
+  -moz-animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeInScale 0.7s ease-in-out;
+}
+
+.tab-container .tab-content h3 {
+  text-align: center;
+}
+
+.tab-container [id^="tab"]:checked+label {
+  background-color: #fff;
+}
+
+.s3b__btn__box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#s3b__btn {
+  background-color: cornflowerblue;
+  border-style: none;
+  padding: 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+/*
+
+
 
 .s3b__title__box {
   width: 100%;
@@ -375,6 +453,7 @@ button[value="read more"]:hover {
 
 .s3b__minititle__box h4 {
   padding: 20px 25px;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
@@ -404,7 +483,7 @@ button[value="read more"]:hover {
   border-radius: 5px;
   color: white;
 }
-
+*/
 /*--------FOOTER HEADER--------*/
 
 .footer__header {
