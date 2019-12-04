@@ -23,7 +23,7 @@
         <h1>Powerfully simple with a squeeky clean desgin.</h1>
         <p>Find out how you can offer quick and powerful solution to your cusotmers now!</p>
         <div class="header_button">
-          <button class="button button_color_red">LEARN MORE</button>
+          <button id="header_button">LEARN MORE</button>
         </div>
       </div>
     </div>
@@ -96,11 +96,11 @@
   <!---------------SECTION 2----------------->
   <section class="section2">
     <div class="container s2-container">
-      <div class="s2__title__box">
-        <div class="s2__title__border">
+      <div class="title__box s2__title__box">
+        <div class="title__border">
         </div>
         <h3>RECENT WORK</h3>
-        <div class="s2__title__border">
+        <div class="title__border">
         </div>
       </div>
       <div class="s2__content__box">
@@ -136,64 +136,78 @@
   <!---------------SECTION 3----------------->
   <section class="section3">
     <div class="container s3-container">
-      <div class="section3__title__box">
-        <div class="section3__title__border">
+      <div class="container s3a-container">
+        <div class="title__box s3a__title__box">
+          <div class="title__border">
+          </div>
+          <h3>TESTIMONIALS</h3>
+          <div class="title__border">
+          </div>
         </div>
-        <h3>TESTIMONIALS</h3>
+        <div class="s3a__content__box">
+          <div class="s3a__content no1">
+            <h4>JOHN SMITH</h4>
+            <p><i>"Lorem ipsum, dolor sit amet consectetur adipisicing elit."</i></p>
+          </div>
+          <div class="s3a__content no2">
+            <h4>JOHN SMITH</h4>
+            <p><i>"Lorem ipsum, dolor sit amet consectetur adipisicing elit."</i></p>
+          </div>
+          <div class="s3a__content no3">
+            <h4>JOHN SMITH</h4>
+            <p><i>"Lorem ipsum, dolor sit amet consectetur adipisicing elit."</i></p>
+          </div>
+          <div class="s3a__content no4">
+            <h4>JOHN SMITH</h4>
+            <p><i>"Lorem ipsum, dolor sit amet consectetur adipisicing elit."</i></p>
+          </div>
+        </div>
       </div>
-      <div class="s3__content__box">
-        <div class="s3__content no1">
-          <h4>JOHN SMITH</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <div class="container s3b-container">
+        <div class="title__box s3b__title__box">
+          <div class="title__border">
+          </div>
+          <h3>DEVELOPMENT</h3>
+          <div class="title__border">
+          </div>
         </div>
-        <div class="s3__content no2">
-          <h4>JOHN SMITH</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div class="s3b__minititle__box">
+          <h4 id="title-design">DESIGN</h4>
+          <h4 id="title-production">PRODUCTION</h4>
         </div>
-        <div class="s3__content no3">
-          <h4>JOHN SMITH</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="s3__content no4">
-          <h4>JOHN SMITH</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <div class="s3b__content__box">
+          <h5>The Design</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta, amet omnis autem doloribus nobis
+            explicabo officia voluptates vel expedita, dolorem ut quas in ad possimus qui nostrum similique ipsam?
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non commodi numquam nam delectus amet alias qui
+            ipsam,
+            tempore quaerat consequuntur ullam tempora minima beatae perspiciatis libero obcaecati. Molestias,
+            reiciendis
+            itaque.
+          </p>
+          <div class="s3b__btn__box">
+            <button id="s3b__btn">READ MORE</button>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!---------------SECTION 4----------------->
-  <section class="section4">
-    <div class="s4__title__box">
-      <h4 id="title-design">DESIGN</h4>
-      <h4 id="title-production">PRODUCTION</h4>
-    </div>
-    <div class="s4__content__box">
-      <h5>The Design</h5>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti soluta, amet omnis autem doloribus nobis
-        explicabo officia voluptates vel expedita, dolorem ut quas in ad possimus qui nostrum similique ipsam?
 
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non commodi numquam nam delectus amet alias qui
-        ipsam,
-        tempore quaerat consequuntur ullam tempora minima beatae perspiciatis libero obcaecati. Molestias, reiciendis
-        itaque.
-      </p>
-      <div class="s4__btn__box">
-        <button id="s4__btn">READ MORE</button>
-      </div>
-    </div>
-  </section>
-
-
-  <!---------------FOOTER----------------->
-  <footer class="footer">
-    <div class="footer1__container">
+  <!---------------FOOTER HEADER----------------->
+  <div class="container footer__header__container">
+    <div class="footer__header">
       <h2>GET IN TOUCH WITH US NOW</h2>
-      <div class="footer1__btn__box">
-        <button id="footer1__btn">contact us</button>
+      <div class="footer__header__btn">
+        <button id="footer__btn">CONTACT US</button>
       </div>
     </div>
-    <div class="footer2__container">
+  </div>
+
+  <!-------------------FOOTER-------------------->
+  <footer class="footer">
+    <div class="container footer__container">
       <div class="footer__column">
         <h3>ABOUT US</h3>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus perferendis odit deleniti dicta velit
@@ -207,28 +221,28 @@
       <div class="footer__column">
         <h3>LATEST TWEETS</h3>
         <div class="tweet__box">
-          <p class="tweet__msg">@JohnDoe Just released our new version of software for e-commerce business
+          <p class="tweet__msg"><b>@JohnDoe</b> Just released our new version of software for e-commerce business
             #checkthisout
           </p>
           <p class="tweet__date">about 3 hours ago</p>
         </div>
         <div class="tweet__box">
-          <p class="tweet__msg">@shushu Thank you so much for your work! #thankyou</p>
+          <p class="tweet__msg"><b>@shushu</b> Thank you so much for your work! #thankyou</p>
           <p class="tweet__date">about 3 weeks ago</p>
         </div>
       </div>
       <div class="footer__column">
         <h3>LATEST POSTS</h3>
         <div class="blog__link">
-          <p>POST 1</p>
+          <p>Does scalibility matter?</p>
         </div>
         <div class="blog__link">
-          <p>POST 2</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
         </div>
         <div class="blog__link">
-          <p>POST 3</p>
+          <p>Web development 101</p>
         </div>
-        <div class="blog__link">
+        <div class="blog__link link__4">
           <p>POST 4</p>
         </div>
       </div>
@@ -247,27 +261,37 @@
         </div>
       </div>
     </div>
-    <div class="footer3__container">
-      <p> copyright &#9400; 2003- 2019 RUSSEL WEB DEVELOPMENT INC. ALL RIGHT RESERVED.</p>
+  </footer>
+
+
+  <!-------------------COPYRIGHT-------------------->
+
+  <div class="copyright">
+    <div class="copyright__container">
+      <div class="copyright__box">
+        <p> COPYRIGHT &#9400; 2003- 2019 RUSSEL WEB DEVELOPMENT INC. ALL RIGHT RESERVED.</p>
+      </div>
+
       <div class="social-media__box">
         <div class="social-media">
-          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-twitter-square fa-2x"></i>
         </div>
         <div class="social-media">
-          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-facebook-square fa-2x"></i>
         </div>
         <div class="social-media">
-          <i class="fab fa-vimeo"></i>
+          <i class="fab fa-vimeo fa-2x"></i>
         </div>
         <div class="social-media">
-          <i class="fab fa-google-plus-square"></i>
+          <i class="fab fa-google-plus-square fa-2x"></i>
         </div>
         <div class="social-media">
-          <i class="fab fa-pinterest-square"></i>
+          <i class="fab fa-pinterest-square fa-2x"></i>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+
 </body>
 
 </html>
